@@ -4,7 +4,7 @@ public class Lab3Exercises {
 	public static void main(String[] args) {
 		JFrame myFrame = new JFrame("Carlos") ;
 		myFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		myFrame.setLocation(900, 400);
+		myFrame.setLocation(450, 300); //Location was changed due to smaller screen
 		myFrame.setSize(500, 300);
 		MyPanelClass myPanel = new MyPanelClass();
         myFrame.getContentPane().add(myPanel);
