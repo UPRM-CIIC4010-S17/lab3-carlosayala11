@@ -15,7 +15,7 @@ public class MyPanelClass extends JPanel {
                         super.paintComponent(g);
  
                         //Compute interior coordinates
-                        Insets myInsets = this.getInsets();
+                        Insets myInsets = this.getInsets(); 
                         int x1 = myInsets.left;
                         int y1 = myInsets.top;
                         int x2 = getWidth() - myInsets.right - 1;
@@ -79,20 +79,23 @@ public class MyPanelClass extends JPanel {
                         g.fillPolygon(triangle); 
                         
                         Polygon star  = new Polygon();
-                        star.addPoint(x1 + 25, y1 + 103);
-                        star.addPoint(x1 + 41, y1 + 103);
-                        star.addPoint(x1 + 47, y1 + 88);
-                        star.addPoint(x1 + 53, y1 + 103);
-                        star.addPoint(x1 + 69, y1 + 103);
-                        star.addPoint(x1 + 56, y1 + 113);
-                        star.addPoint(x1 + 61, y1 + 128);
-                        star.addPoint(x1 + 47, y1 + 118);
-                        star.addPoint(x1 + 34, y1 + 128);
-                        star.addPoint(x1 + 38, y1 + 113);
+                        star.addPoint(25*width/200 -30, 93*height/200);
+                        star.addPoint(41*width/200 -30, 93*height/200);
+                        star.addPoint(47*width/200 -30, 78*height/200);
+                        star.addPoint(53*width/200 -30, 93*height/200);
+                        star.addPoint(69*width/200 -30, 93*height/200);
+                        star.addPoint(56*width/200 -30, 103*height/200);
+                        star.addPoint(61*width/200 -30, 118*height/200);
+                        star.addPoint(47*width/200 -30, 108*height/200);
+                        star.addPoint(34*width/200 -30, 118*height/200);
+                        star.addPoint(38*width/200 -30, 103*height/200);
                         g.setColor(Color.WHITE);
                         g.fillPolygon(star);
                         
                        
+                        
+                        
+                        
 
                        
                         
